@@ -331,9 +331,9 @@ namespace HospitalmanagementSystem
                 {
                     case "Admin":
                         this.Close();
-                        Main m = new Main();
+                       // Main m = new Main();
                         Home = "";
-                         m.Show();
+                         //m.Show();
                     break;
 
                     case "Administration":

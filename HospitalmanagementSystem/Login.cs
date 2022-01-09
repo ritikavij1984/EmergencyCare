@@ -16,7 +16,7 @@ namespace HospitalmanagementSystem
         SqlConnection c = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=emergency;Integrated Security=True");
         Timer t = new Timer();
         Administration administrator;
-        //DoctorForm doctor;
+       
         String GetId = "";
         String ID = "";
         String GetPassword = "";
@@ -221,8 +221,7 @@ VALUES        ('" + Category.Text + "','" + GetId + "','" + dateTimePicker1.Text
                         case "Admin":
                             
                             this.Hide();
-                            Main m = new Main();
-                            m.Show();
+                           
                             
                             break;
 
@@ -242,10 +241,10 @@ VALUES        ('" + Category.Text + "','" + GetId + "','" + dateTimePicker1.Text
                             getID();
                             GetAttandance();
                             
-                            //doctor = new DoctorForm(ID);
+                            
                             
                             this.Hide();
-                            //doctor.Show();
+                           
 
                             break;
 
